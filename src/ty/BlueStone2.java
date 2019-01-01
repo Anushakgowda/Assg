@@ -22,7 +22,7 @@ public class BlueStone2 {
 		driver.get("https://www.bluestone.com/");
 		String ss = driver.getTitle();
 		//System.out.println(ss);
-		Assert.assertTrue(ss.contains("BlueStone"));
+		Assert.assertTrue(ss.contains("BlueStone"));   
 		System.out.println("Welcome displayed correctly");
 		WebElement we = driver.findElement(By.xpath("//a[contains(text(),'All Jewellery ')]"));
 		Actions act =new Actions(driver);
